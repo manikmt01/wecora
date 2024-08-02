@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* global starts */
@@ -19,24 +18,18 @@ body {
 
 h1 {
   font-size: 58px;
-  font-weight: 700;
-  margin: 0;
 }
 
 h2 {
   font-size: 43px;
-  font-weight: 600;
-  margin: 0;
 }
 
 h3 {
   font-size: 30px;
-  font-weight: 600;
-  margin: 0;
 }
 
 p {
-  font-size: 38px;
+  font-size: 35px;
   font-weight: 400;
   margin: 0;
 }
@@ -63,11 +56,6 @@ a {
   font-size: 18px;
   font-weight: 500;
   padding: 10px 30px;
-  color: var(--cs-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
   background-color: var(--cs-primary);
   border-radius: 3px;
   transition: 0.4s all ease-in-out;
@@ -75,8 +63,8 @@ a {
 }
 
 .cs-btn:hover {
-  color: var(--cs-white);
-  background-color: var(--cs-secondary);
+  color: var(--cs-white) !important;
+  background-color: var(--cs-secondary) !important;
 }
 
 /* header start  */
@@ -99,15 +87,12 @@ nav {
   background-image: url(../img/herobg.svg);
   background-position: top right;
   background-repeat: no-repeat;
-  min-height: 90vh;
-  background-size: 630px;
-  padding-bottom: 80px;
-  padding-top: 120px;
+  background-size: 690px;
+  padding: 90px 0 0;
 }
 
 #hero-row {
-  min-height: 100vh;
-  align-items: center;
+  min-height: 767px;
 }
 
 .hero-contant p {
@@ -117,55 +102,31 @@ nav {
   font-size: 21px;
 }
 
-.hero-img {
-  text-align: end;
-}
-
 /* every products start here  */
 .every-product h2,
 .why-does h2 {
-  text-align: center;
-  margin: 0 auto 33px;
   max-width: 1010px;
 }
 
-.every-pro-images {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  align-items: center;
-  gap: 30px;
-}
-
-.pro-single-img {
-  padding: 20px;
-  margin: 0 auto;
-}
 .icon-wraper {
-  background-color: var(--cs-white);
-  max-width: 188px;
-  max-height: 187px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 188px;
+  height: 187px;
   border-radius: 50%;
   padding: 31.5px;
   box-shadow: 0 0 10px 0 #ddd;
 }
+
 .icon-wraper img {
   max-width: 90px;
 }
 
 .pro-single-img h4 {
-  text-align: center;
   font-size: 25px;
-  font-weight: 600;
   margin-top: 20px;
 }
 
 /* why does start here  */
 .why-does p {
-  margin: 0 auto;
-  text-align: center;
   max-width: 1070px;
 }
 
@@ -176,7 +137,6 @@ nav {
 /* send it start  */
 .send-it-header p {
   max-width: 890px;
-  margin: 20px auto 30px;
 }
 
 .send-it-images {
@@ -189,27 +149,10 @@ nav {
   padding-bottom: 80px;
 }
 
-.enhance-content h2 {
-  margin-bottom: 28px;
-}
-
-.enhance-img {
-  text-align: end;
-}
-
 /* need start here  */
 
 .need-content p {
-  margin: 28px auto 0;
   max-width: 680px;
-}
-
-.need-imgaes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  gap: 60px;
-  padding-top: 76px;
 }
 
 .need-single {
@@ -217,11 +160,14 @@ nav {
 }
 
 .need-single p {
-  font-size: 16px;
   margin-top: 20px;
 }
 
-/* canva  */
+/* library  */
+#library-des {
+  max-width: 634px;
+}
+
 #canva {
   max-width: 436px;
   margin-left: auto;
@@ -237,9 +183,6 @@ nav {
 }
 
 /* pricing start here  */
-.pricing h2 {
-  margin-bottom: 53px;
-}
 
 .price-btn {
   max-width: 320px;
@@ -259,28 +202,14 @@ nav {
   font-size: 18px;
   font-weight: 500;
   padding: 10px 30px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
   border-radius: 10px;
   transition: 0.4s all ease-in-out;
   font-family: 'Poppins', sans-serif;
 }
 
 .nav-tabs .nav-item .active {
-  font-size: 18px;
-  font-weight: 500;
-  padding: 10px 30px;
-  color: var(--cs-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background-color: var(--cs-primary);
-  border-radius: 10px;
+  color: var(--cs-white) !important;
+  background-color: var(--cs-primary) !important;
   transition: 0.4s all ease-in-out;
   font-family: 'Poppins', sans-serif;
 }
@@ -293,9 +222,6 @@ nav {
 
 /* price start  */
 .pricing-table {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
   gap: 67px;
   padding-top: 80px;
 }
@@ -311,18 +237,12 @@ nav {
 .pricing-table-heading {
   padding: 20px 40px 20px;
 }
-
-.pricing-single-table h3 {
-  text-align: center;
-}
-
 .pricing-single-table h3 span {
   font-size: 16px;
   font-weight: 400;
 }
 
 .pricing-single-table p {
-  text-align: center;
   font-size: 12px;
   margin-top: 10px;
 }
@@ -338,26 +258,18 @@ nav {
   min-height: 573px;
 }
 
-.pricing-inner ul li {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
 .check-img {
   display: block;
   width: 26px;
 }
 
 .list-text {
-  display: block;
   width: calc(269px - 36px);
 }
 
 .cs-price {
-  display: inline-block;
   width: 260px;
-  background-color: var(--cs-white);
+  max-width: 100%;
   color: var(--cs-primary);
 }
 
@@ -374,30 +286,19 @@ nav {
 .newsletter p {
   font-size: 16px;
   max-width: 425px;
-  text-align: center;
   margin: 28px auto 34px;
 }
 
-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
-}
-
-input {
+.newsletter input {
   max-width: 403px;
   height: 48px;
   box-shadow: 0 0 10px 0 #ddd;
-  border: none !important;
   padding-left: 28px !important;
-  color: #000 !important;
+  font-size: 18px;
 }
 
-input::placeholder {
-  font-size: 18px;
+.newsletter input::placeholder {
   color: #000 !important;
-  font-weight: 600;
 }
 
 /* footer start  */
@@ -406,7 +307,6 @@ footer {
 }
 
 footer p {
-  text-align: center;
   font-size: 18px;
 }
 

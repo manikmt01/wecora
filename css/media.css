@@ -2,20 +2,13 @@
   header {
     background-size: auto;
   }
-  .hero {
-    background-size: 700px;
-  }
-}
-@media (min-width: 1700px) {
-  .hero {
-    background-size: 700px;
-  }
 }
 
 @media (max-width: 1600px) {
   nav {
     padding: 30px 60px;
   }
+
   .icon-wraper {
     width: 120px;
     height: 120px;
@@ -36,12 +29,14 @@
     font-size: 38px;
   }
 }
+
 @media (max-width: 1200) {
   .icon-wraper {
     width: 100px;
     height: 100px;
     padding: 5px;
   }
+
   .icon-wraper img {
     max-width: 50px;
   }
@@ -66,14 +61,13 @@
     padding: 40px 0;
   }
 
-  header {
+  .hero {
     background-image: none;
+    padding: 110px 0 0;
   }
 
-  #hero-row,
-  .hero-img {
-    text-align: center;
-    padding: 40px 0;
+  #hero-row {
+    min-height: 650px;
   }
 
   .hero-contant p {
@@ -81,16 +75,8 @@
     font-size: 16px;
   }
 
-  .every-pro-images {
-    gap: 20px;
-  }
-
-  .pro-single-img {
-    max-width: 120px;
-  }
-
   .pro-single-img h4 {
-    font-size: 16px;
+    font-size: 16px !important;
     margin-top: 8px;
   }
 
@@ -106,31 +92,6 @@
 
   .enhance {
     padding-bottom: 20px;
-  }
-
-  .enhance-content {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .enhance-content h2 {
-    margin-bottom: 16px;
-  }
-
-  .enhance-img,
-  .find-it-img {
-    text-align: center;
-  }
-
-  .need-content p {
-    margin: 20px auto 0;
-  }
-
-  .need-imgaes {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 30px;
-    padding-top: 40px;
   }
 
   #siri-content p {
@@ -156,32 +117,22 @@
   }
 }
 
-@media (max-width: 860px) {
-  .pricing-table {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 767px) {
+  .logo {
+    width: 130px;
+  }
+
+  nav {
+    padding: 18px 16px;
+  }
+
+  .cs-btn {
+    font-size: 16px;
+    padding: 6px 20px;
   }
 
   .pricing-inner ul {
     min-height: 53px;
-  }
-}
-
-@media (max-width: 767px) {
-  .every-product h2,
-  .why-does h2 {
-    text-align: center;
-    margin: 0 auto 20px;
-    max-width: 1010px;
-  }
-
-  .pro-single-img {
-    max-width: 90px;
-    padding: 0;
-  }
-
-  form {
-    flex-direction: column;
   }
 
   input {
@@ -198,42 +149,22 @@
     font-size: 26px;
   }
 
-  .logo {
-    width: 130px;
-  }
-
-  nav {
-    padding: 30px 20px;
-  }
-
-  .cs-btn {
-    font-size: 16px;
-    padding: 6px 20px;
-  }
-
-  .every-pro-images {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .need-imgaes {
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-    gap: 40px;
-  }
-
   .need-single p {
     font-size: 16px;
     margin-top: 15px;
   }
 
   .pricing-single-table {
-    max-width: 355px;
+    max-width: 100%;
   }
 
   .pricing-table-heading {
     padding: 20px;
   }
-
+  .nav-tabs .nav-item button {
+    font-size: 16px;
+    padding: 8px 28px;
+  }
   .list-text {
     display: block;
     width: calc(254px - 36px);
