@@ -279,7 +279,7 @@ nav {
 .newsletter p {
   font-size: 16px;
   max-width: 425px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .newsletter input {
